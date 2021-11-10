@@ -65,5 +65,21 @@
       "prefix": ["oxmyupdate", "qbupdate"],
       "body": ["local res = exports.oxmysql:updateSync(${1:query}, {})"],
       "description": "Update Sync. QBCore/OxMySql"
+   },
+
+   "QBCore Add Command": {
+       "prefix": ["qbaddcommand", "qbadd"],
+       "body": [
+           "QBCore.Commands.Add(${1:commandName}, ${2:commandDescription}, {${3:args}}, ${4:argsRequired?}, function(source, args)",
+        "\t${6:-- Code..}",
+    "end, ${5:needsPermission?})"],
+    
+        "description": "QBCore Add Command. (Server Side)"
+   },
+
+   "QBCore Create Callback": {
+       "prefix": ["qbcreatecallback", "qbccb"],
+       "body": ["QBCore.Functions.CreateCallback(${1:name}, function(${2:args}", "\t${3:-- Code..}", "end)"],
+       "description": "QBCore Create Callback"
    }
 }
