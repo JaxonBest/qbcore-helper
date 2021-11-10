@@ -47,37 +47,37 @@
 
   "QBCore OxMySql Insert Sync": {
     "prefix": ["insertsync", "oxmyis"],
-    "body": ["local res = exports.oxmysql:insertSync(${1:query}, {})"],
+    "body": ["local res = exports.oxmysql:insertSync('${1:query}', {})"],
     "description": "Insert Sync. QBCore/OxMySql"
   },
 
   "QBCore OxMySql Insert Async": {
     "prefix": ["oxmyinsert", "oxmyi"],
-    "body": ["local res = exports.oxmysql:insert(${1:query}, {})"],
+    "body": ["local res = exports.oxmysql:insert('${1:query}', {})"],
     "description": "Insert. QBCore/OxMySql"
   },
 
   "QBCore OxMySql Execute": {
     "prefix": ["oxmyexe", "oxmyexecute"],
-    "body": ["local res = exports.oxmysql:execute(${1:query}, {})"],
+    "body": ["local res = exports.oxmysql:execute('${1:query}', {})"],
     "description": "Execute. QBCore/OxMySql"
   },
 
   "QBCore OxMySql Execute Sync": {
     "prefix": ["oxmyexesync", "oxmyexecutesync"],
-    "body": ["local res = exports.oxmysql:executeSync(${1:query}, {})"],
+    "body": ["local res = exports.oxmysql:executeSync('${1:query}', {})"],
     "description": "Execute Sync. QBCore/OxMySql"
   },
 
   "QBCore OxMySql Update": {
       "prefix": ["oxmyupdate", "qbupdate"],
-      "body": ["local res = exports.oxmysql:update(${1:query}, {})"],
+      "body": ["local res = exports.oxmysql:update('${1:query}', {})"],
       "description": "Update. QBCore/OxMySql"
   },
 
   "QBCore OxMySql Update Sync": {
       "prefix": ["oxmyupdate", "qbupdate"],
-      "body": ["local res = exports.oxmysql:updateSync(${1:query}, {})"],
+      "body": ["local res = exports.oxmysql:updateSync('${1:query}', {})"],
       "description": "Update Sync. QBCore/OxMySql"
    },
 
@@ -156,5 +156,6 @@
         "prefix": ["qbcanui", "qbcanuseitem"], 
         "body": ["local canUseCertainItem = QBCore.Functions.CanUseItem(${1:item})"],
         "description": "QBCore Can Use Item? (Server Side)"
-    }
+    },
+    
 }
