@@ -168,5 +168,11 @@
         "prefix": ["qbkick"],
         "body": "QBCore.Functions.Kick(${1:source}, '${2:reason}', ${3:setKickReason}, ${4:deferrals})",
         "description": "QBCore Kick. (Server Side)"
+    },
+
+    "QBCore Add Permission": {
+        "prefix": ["qbaddpermission"],
+        "body": "QBCore.Functions.AddPermission(${1:source}, ${2:permission})",
+        "description": "QBCore Add Permission. (Server Side)"
     }
 }
