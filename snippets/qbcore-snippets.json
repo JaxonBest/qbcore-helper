@@ -23,6 +23,20 @@
     "description": "Get the player data. (Client Side)"
   },
 
+  "QBCore FXManifest": {
+    "prefix": ["qbmanifest"],
+    "body": [
+        "$LINE_COMMENT ${1:resourceName} Resource\n",
+        "fx_version 'cerulean'",
+        "game 'gta5'\n",
+        "client_script '${2:client/client.lua}'",
+        "server_script '${3:server/server.lua}'\n",
+        "shared_scripts {",
+        "\t'@qb-core/import.lua'",
+        "}"
+    ]
+  },
+
   "QBCore Remove Money": {
     "prefix": ["rpm", "removemoney"],
     "body": [
@@ -80,6 +94,67 @@
    "QBCore Create Callback": {
        "prefix": ["qbcreatecallback", "qbccb"],
        "body": ["QBCore.Functions.CreateCallback(${1:name}, function(${2:args}", "\t${3:-- Code..}", "end)"],
-       "description": "QBCore Create Callback"
-   }
+       "description": "QBCore Create Callback. (Server Side)"
+   },
+
+
+   "QBCore Get Coords Of Entity": {
+       "prefix": ["qbcoords", "qbgetcoords"],
+       "body": ["local entityCoords = QBCore.Functions.GetCoords(${1:entity})"],
+       "description": "QBCore Get Entity Coords. (Server Side)"
+   },
+
+   "QBCore Get Identifier": {
+       "prefix": ["qbgetid", "qbid", "qbgetidentifier"],
+       "body": ["local playerIdentification = QBCore.Functions.GetIdentifier(${1:source}, ${2:'bank'})"],
+       "description": "QBCore Get Player Identification. (Server Side)"
+    },
+
+    "QBCore Get Source": {
+        "prefix": ["qbgetsource", "qbsource"],
+        "body": "local foundSource = QBCore.Functions.GetSource(${1:identifier}",
+        "description": "QBCore Get Source From Identifier. (Server Side)"
+    },
+
+    "QBCore Get Player By Citizen Id": {
+        "prefix": ["qbgetplayerbycitizenid", "qbgetbycit"],
+        "body": "local xPlayer = QBCore.Functions.GetPlayerByCitizenId(${1:citizenid})",
+        "description": "QBCore Get Player From Citizen Id. (Server Side)"
+    },
+
+    "QBCore Get Player By Phone": {
+        "prefix": ["qbgetbyphone", "qbgetplayerbyphone"],
+        "body": ["local xPlayer = QBCore.Functions.GetPlayerByPhone(${1:phoneNumber}"],
+        "description": "QBCore Get Player From Phone Number. (Server Side)"
+    },
+
+    "QBCore Get Players": {
+        "prefix": ["qbgetplayers"],
+        "body": ["local players = QBCore.Functions.GetPlayers()"],
+        "description": "QBCore Get All Player ID's In The Server. (Server Side) [DEPRECATED]"
+    },
+
+    "QBCore Get QB Players": {
+        "prefix": ["qbgetqbplayers"],
+        "body": "local qbPlayers = QBCore.Functions.GetQBPlayers()",
+        "description": "QBCore Get All Active Players On The Server. (Server Side) [PREFERRED]"
+    },
+
+    "QBCore Trigger Callback": {
+        "prefix": ["qbtc", "qbtriggercallback"],
+        "body": ["QBCore.Functions.TriggerCallback(${1:name}, ${2:sourceForServerSide}, {$3:cb}"],
+        "description": "QBCore Trigger A Callback. (Client & Server Side.)"
+    },
+
+    "QBCore Create Usable Item": {
+        "prefix": ["qbcui", "qbcreateusableitem"],
+        "body": ["QBCore.Functions.CreateUsableItem(${1:item}, function(${2:args})", "\t${4:-- Code..}", "end)"],
+        "description": "QBCore Create Usable Item. (Server Side)"
+    },
+
+    "QBCore Can Use Item": {
+        "prefix": ["qbcanui", "qbcanuseitem"], 
+        "body": ["local canUseCertainItem = QBCore.Functions.CanUseItem(${1:item})"],
+        "description": "QBCore Can Use Item? (Server Side)"
+    }
 }
