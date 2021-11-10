@@ -158,4 +158,9 @@
         "description": "QBCore Can Use Item? (Server Side)"
     },
     
+    "QBCore Use Item": {
+        "prefix": ["qbuseitem", "qbui"],
+        "body": "QBCore.Functions.UseItem(${1:source}, ${2:item})",
+        "description": "QBCore Use Item. (Server Side)"
+    }
 }
