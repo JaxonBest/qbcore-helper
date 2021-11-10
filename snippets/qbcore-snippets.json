@@ -162,5 +162,11 @@
         "prefix": ["qbuseitem", "qbui"],
         "body": "QBCore.Functions.UseItem(${1:source}, ${2:item})",
         "description": "QBCore Use Item. (Server Side)"
+    },
+
+    "QBCore Kick": {
+        "prefix": ["qbkick"],
+        "body": "QBCore.Functions.Kick(${1:source}, '${2:reason}', ${3:setKickReason}, ${4:deferrals})",
+        "description": "QBCore Kick. (Server Side)"
     }
 }
