@@ -1,0 +1,69 @@
+{
+  "Import QBCore": {
+    "prefix": ["qbcore", "importqb", "qbimport"],
+    "body": ["local QBCore = exports['qb-core']:GetCoreObject()"],
+    "description": "Import QBCore locally."
+  },
+
+  "QBCore Shared": {
+    "prefix": ["qbshared"],
+    "body": ["shared_scripts {", "\t'@qb-core/import.lua'", "}"],
+    "description": "FxManifest Shared QBCore. (Resource Import)"
+  },
+
+  "QBCore Get Player": {
+    "prefix": ["getplayer", "gp"],
+    "body": ["local xPlayer = QBCore.Functions.GetPlayer(${1:source})"],
+    "description": "Get the Player. (Server Side)"
+  },
+
+  "QBCore Get Player Data": {
+    "prefix": ["getplayerdata", "gpd"],
+    "body": ["local ${name:playerData} = QBCore.Functions.GetPlayerData()"],
+    "description": "Get the player data. (Client Side)"
+  },
+
+  "QBCore Remove Money": {
+    "prefix": ["rpm", "removemoney"],
+    "body": [
+      "${1:xPlayer}.Functions.RemoveMoney(${2:moneytype}, ${3:amount}, ${1:reason})"
+    ],
+    "description": "Remove money from a player. (Server Side)"
+  },
+
+  "QBCore OxMySql Insert Sync": {
+    "prefix": ["insertsync", "oxmyis"],
+    "body": ["local res = exports.oxmysql:insertSync(${1:query}, {})"],
+    "description": "Insert Sync. QBCore/OxMySql"
+  },
+
+  "QBCore OxMySql Insert Async": {
+    "prefix": ["oxmyinsert", "oxmyi"],
+    "body": ["local res = exports.oxmysql:insert(${1:query}, {})"],
+    "description": "Insert. QBCore/OxMySql"
+  },
+
+  "QBCore OxMySql Execute": {
+    "prefix": ["oxmyexe", "oxmyexecute"],
+    "body": ["local res = exports.oxmysql:execute(${1:query}, {})"],
+    "description": "Execute. QBCore/OxMySql"
+  },
+
+  "QBCore OxMySql Execute Sync": {
+    "prefix": ["oxmyexesync", "oxmyexecutesync"],
+    "body": ["local res = exports.oxmysql:executeSync(${1:query}, {})"],
+    "description": "Execute Sync. QBCore/OxMySql"
+  },
+
+  "QBCore OxMySql Update": {
+      "prefix": ["oxmyupdate", "qbupdate"],
+      "body": ["local res = exports.oxmysql:update(${1:query}, {})"],
+      "description": "Update. QBCore/OxMySql"
+  },
+
+  "QBCore OxMySql Update Sync": {
+      "prefix": ["oxmyupdate", "qbupdate"],
+      "body": ["local res = exports.oxmysql:updateSync(${1:query}, {})"],
+      "description": "Update Sync. QBCore/OxMySql"
+   }
+}
