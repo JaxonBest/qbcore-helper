@@ -248,5 +248,11 @@
       "prefix": ["qbeadditem"],
       "body": "TriggerServerEvent('QBCore:Server:AddItem', ${1:itemName}, ${2:amount}, ${3:slot}, ${4:info})",
       "description": "QBCore Add Item. [NOT RECOMMENDED BY DOCS] [EVENT] (Server Side)"
+    },
+
+    "QBCore Call Command": {
+      "prefix": ["qbecallcommand"],
+      "body": "TriggerServerEvent('${1:name}, ${2:args})'",
+      "description": "QBCore Call Command. [EVENT] (Server Side)"
     }
 }
