@@ -6,7 +6,7 @@ It is created by **Jaxon Best**.
 
 ## Snippets
 
-Go into a .[https://www.lua.org/](lua) file and type the prefix `qb`.
+Go into a .[lua](https://www.lua.org/) file and type the prefix `qb`.
 
 Many different snippets will appear choose the one you would like and off you go!
 
