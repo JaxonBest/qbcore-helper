@@ -242,5 +242,11 @@
       "prefix": ["qberemoveitem"],
       "body": "TriggerServerEvent('QBCore:Server:UseItem', ${1:item})",
       "description": "QBCore Event Item. [NOT RECOMMENDED BY DOCS] [EVENT] (Server Side)"
+    },
+
+    "QBCore Event Add Item": {
+      "prefix": ["qbeadditem"],
+      "body": "TriggerServerEvent('QBCore:Server:AddItem', ${1:itemName}, ${2:amount}, ${3:slot}, ${4:info})",
+      "description": "QBCore Add Item. [NOT RECOMMENDED BY DOCS] [EVENT] (Server Side)"
     }
 }
