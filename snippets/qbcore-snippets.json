@@ -211,6 +211,12 @@
     "QBCore Event Trigger Callback": {
       "prefix": ["qbtce", "qbtriggercallbackevent"],
       "body": ["TriggerServerEvent('QBCore:Server:TriggerCallback', ${1:name})"],
-      "description": "QBCore Trigger Callback [EVENT] (Server Side)"
+      "description": "QBCore Trigger Callback. [EVENT] (Server Side)"
+    },
+
+    "QBCore Event Update Player": {
+      "prefix": ["qbupdateplayerevent"],
+      "body": ["TriggerServerEvent('QBCore:Client:UpdatePlayer')"],
+      "description": "QBCOre Update Player. [EVENT] (Server Side)"
     }
 }
