@@ -188,5 +188,11 @@
       "prefix": ["qbhaspermission"],
       "body": "local doesPlayerHavePermission = QBCore.Functions.HasPermission(${1:source}, ${2:permissionName})",
       "description": "QBCore Has Permission. (Server Side)"
+    },
+
+    "QBCore Get Permission": {
+      "prefix": "qbgetpermission",
+      "body": ["local ${1:foundPermission} = QBCore.Functions.GetPermission(${2:source})"],
+      "description": "QBCore Get Permission. (Server Side)"
     }
 }
