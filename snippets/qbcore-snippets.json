@@ -70,7 +70,7 @@
   },
 
   "QBCore OxMySql Update": {
-      "prefix": ["oxmyupdate", "qbupdate"],
+      "prefix": ["oxmyupdate"],
       "body": ["local res = exports.oxmysql:update('${1:query}', {})"],
       "description": "Update. QBCore/OxMySql"
   },
@@ -254,5 +254,11 @@
       "prefix": ["qbecallcommand"],
       "body": "TriggerServerEvent('${1:name}, ${2:args})'",
       "description": "QBCore Call Command. [EVENT] (Server Side)"
+    },
+
+    "QBCore Event Notify": {
+      "prefix": "qbenotify",
+      "body": "TriggerClientEvent('QBCore:Notify', ${1:text}, ${2:type}, ${3:length})",
+      "description": "QBCore Notify. [EVENT]"
     }
 }
