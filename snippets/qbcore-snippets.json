@@ -217,10 +217,12 @@
     "QBCore Event Update Player": {
       "prefix": ["qbeupdateplayer"],
       "body": ["TriggerServerEvent('QBCore:Client:UpdatePlayer')"],
-      "description": "QBCOre Update Player. [EVENT] (Server Side)"
+      "description": "QBCore Update Player. [EVENT] (Server Side)"
     },
 
     "QBCore Event Set Meta Data": {
-      "prefix": ["qbesetmetadata"]
+      "prefix": ["qbesetmetadata"],
+      "body": "TriggerServerEvent('QBCore:Server:SetMetaData', ${1:meta}, ${2:data})",
+      "description": "QBCore Set Meta Data. [EVENT] (Server Side)"
     }
 }
