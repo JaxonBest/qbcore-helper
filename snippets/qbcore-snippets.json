@@ -182,5 +182,11 @@
         "QBCore.Functions.RemovePermission(${1:source})"
       ],
       "description": "QBCore Remove Permission. (Server Side)"
+    },
+
+    "QBCore Has Permission": {
+      "prefix": ["qbhaspermission"],
+      "body": "local doesPlayerHavePermission = QBCore.Functions.HasPermission(${1:source}, ${2:permissionName})",
+      "description": "QBCore Has Permission. (Server Side)"
     }
 }
