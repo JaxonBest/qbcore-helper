@@ -230,5 +230,11 @@
       "prefix": "qbetoggleduty",
       "body": "TriggerServerEvent('QBCore:ToggleDuty') -- needs source.",
       "description": "QBCore Toggle Duty. [EVENT] (Server Side)"
+    },
+
+    "QBCore Event Use Item": {
+      "prefix": ["qbeuseitem"],
+      "body": "TriggerServerEvent('QBCore:Server:UseItem', ${1:item})",
+      "description": "QBCore Use Item. [EVENT] (Server Side)"
     }
 }
