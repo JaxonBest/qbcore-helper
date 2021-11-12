@@ -260,5 +260,11 @@
       "prefix": "qbenotify",
       "body": "TriggerClientEvent('QBCore:Notify', ${1:text}, ${2:type}, ${3:length})",
       "description": "QBCore Notify. [EVENT]"
+    },
+
+    "QBCore Notify": {
+      "prefix": "qbnotify",
+      "body": "QBCore.Functions.Notify(${1:text}, ${2:type}, ${3:millisecondDuration})",
+      "description": "QBCore Notify. (Client Side)"
     }
 }
