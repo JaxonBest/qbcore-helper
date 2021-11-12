@@ -206,5 +206,11 @@
       "prefix": "qbislicenseinuse",
       "body": ["local isLicenseInUse = QBCore.Functions.IsLicenseInUse(${1:license})"],
       "description": "QBCore Is License In Use. (Server Side)"
+    },
+
+    "QBCore Event Trigger Callback": {
+      "prefix": ["qbtce", "qbtriggercallbackevent"],
+      "body": ["TriggerServerEvent('QBCore:Server:TriggerCallback', ${1:name})"],
+      "description": "QBCore Trigger Callback [EVENT] (Server Side)"
     }
 }
