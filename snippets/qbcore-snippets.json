@@ -235,6 +235,12 @@
     "QBCore Event Use Item": {
       "prefix": ["qbeuseitem"],
       "body": "TriggerServerEvent('QBCore:Server:UseItem', ${1:item})",
-      "description": "QBCore Use Item. [EVENT] (Server Side)"
+      "description": "QBCore Use Item. [NOT RECOMMENDED BY DOCS] [EVENT] (Server Side)"
+    },
+    
+    "QBCore Event Remove Item": {
+      "prefix": ["qberemoveitem"],
+      "body": "TriggerServerEvent('QBCore:Server:UseItem', ${1:item})",
+      "description": "QBCore Event Item. [NOT RECOMMENDED BY DOCS] [EVENT] (Server Side)"
     }
 }
