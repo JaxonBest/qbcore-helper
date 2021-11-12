@@ -194,5 +194,11 @@
       "prefix": "qbgetpermission",
       "body": ["local ${1:foundPermission} = QBCore.Functions.GetPermission(${2:source})"],
       "description": "QBCore Get Permission. (Server Side)"
+    },
+
+    "QBCore Is Player Banned": {
+      "prefix": ["qbisplayerbanned"],
+      "body": ["local isPlayerBanned = QBCore.Functions.IsPlayerBanned(${1:source}) -- Boolean"],
+      "description": "QBCore Is Player Banned. (Server Side)"
     }
 }
