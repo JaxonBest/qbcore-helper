@@ -200,5 +200,11 @@
       "prefix": ["qbisplayerbanned"],
       "body": ["local isPlayerBanned = QBCore.Functions.IsPlayerBanned(${1:source}) -- Boolean"],
       "description": "QBCore Is Player Banned. (Server Side)"
+    },
+
+    "QBCore Is License In Use": {
+      "prefix": "qbislicenseinuse",
+      "body": ["local isLicenseInUse = QBCore.Functions.IsLicenseInUse(${1:license})"],
+      "description": "QBCore Is License In Use. (Server Side)"
     }
 }
