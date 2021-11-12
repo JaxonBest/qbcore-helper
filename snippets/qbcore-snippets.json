@@ -174,5 +174,13 @@
         "prefix": ["qbaddpermission"],
         "body": "QBCore.Functions.AddPermission(${1:source}, ${2:permission})",
         "description": "QBCore Add Permission. (Server Side)"
+    },
+
+    "QBCore Remove Permission": {
+      "prefix": ["qbremovepermission"],
+      "body": [
+        "QBCore.Functions.RemovePermission(${1:source})"
+      ],
+      "description": "QBCore Remove Permission. (Server Side)"
     }
 }
