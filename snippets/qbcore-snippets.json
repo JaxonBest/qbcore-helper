@@ -224,5 +224,11 @@
       "prefix": ["qbesetmetadata"],
       "body": "TriggerServerEvent('QBCore:Server:SetMetaData', ${1:meta}, ${2:data})",
       "description": "QBCore Set Meta Data. [EVENT] (Server Side)"
+    },
+    
+    "QBCore Event Toggle Duty": {
+      "prefix": "qbetoggleduty",
+      "body": "TriggerServerEvent('QBCore:ToggleDuty') -- needs source.",
+      "description": "QBCore Toggle Duty. [EVENT] (Server Side)"
     }
 }
